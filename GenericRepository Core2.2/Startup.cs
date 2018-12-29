@@ -34,7 +34,7 @@ namespace GenericRepository_Core2._2
             });
 
             services.AddDbContext<AplicationDbContext>(options => 
-                options.UseSqlServer(Configuration.GetConnectionString("defaultConnection"), b => b.MigrationsAssembly("GenericRepository Core2.2")));
+                options.UseSqlServer(Configuration.GetConnectionString("defaultConnection")));
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
